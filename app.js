@@ -26,4 +26,8 @@ app.get('/power/:a/:b', (req, res) =>
   res.send(Math.pow(parseInt(req.params.a), parseInt(req.params.b)).toString())
 )
 
+app.get('/sqrt/:a', (req, res) =>
+  res.send(Math.sqrt(parseInt(req.params.a)).toString())
+)
+
 app.listen(3000)
