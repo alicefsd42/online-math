@@ -30,4 +30,8 @@ app.get('/sqrt/:a', (req, res) =>
   res.send(Math.sqrt(parseInt(req.params.a)).toString())
 )
 
+app.get('/log/:a', (req, res) =>
+  res.send(Math.log(parseInt(req.params.a)).toString())
+)
+
 app.listen(3000)
